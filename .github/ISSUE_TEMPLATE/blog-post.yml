@@ -1,0 +1,18 @@
+name: Blog post
+description: Write a post for the OpenLeaf community blog. It appears on your own blog page.
+labels: ["blog"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for writing for the OpenLeaf blog.
+        Put your post's title in the title box at the top, write your post below, then press **Create**.
+        Your post shows on the blog within a minute, on your own page. You can edit or close it here at any time.
+  - type: textarea
+    id: post
+    attributes:
+      label: Your post
+      description: You can use Markdown, add links and drag in pictures.
+      placeholder: Start writing...
+    validations:
+      required: true
