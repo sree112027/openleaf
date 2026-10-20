@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenLeaf | Websites and apps, made to grow</title>
+  <meta name="description" content="OpenLeaf designs and builds websites, booking systems and web apps for local businesses and growing teams, with a community blog where every writer gets their own page.">
+  <meta name="theme-color" content="#2b7a4f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M27 5C15 5 6 11 6 21c0 2 .4 3.6 1 5 1.4.6 3 1 5 1 10 0 15-9 15-22z' fill='%232b7a4f'/%3E%3Cpath d='M8.5 24.5c4-6 9-10 15-14' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap bar">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M27 5C15 5 6 11 6 21c0 2 .4 3.6 1 5 1.4.6 3 1 5 1 10 0 15-9 15-22z" fill="currentColor"/>
+          <path class="vein" d="M8.5 24.5c4-6 9-10 15-14"/>
+        </svg>
+        <span class="brand-name">OpenLeaf</span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#blog">Blog</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="home">
+      <section class="wrap hero" id="hero" aria-label="Introduction"></section>
+      <section class="band" id="about"></section>
+      <section class="band tint" id="services"></section>
+      <section class="band" id="work"></section>
+      <section class="band" id="gallery"></section>
+      <section class="band tint" id="blog"></section>
+      <section class="band" id="contact"></section>
+    </div>
+    <div class="view" id="view" hidden></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span id="copyright"></span>
+      <a id="source-link" href="https://github.com/sree112027/openleaf">Source on GitHub</a>
+    </div>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Picture">
+    <div class="lb-inner">
+      <div class="lb-art"></div>
+      <p class="lb-cap"></p>
+    </div>
+    <button class="btn lb-close" type="button">Close</button>
+  </dialog>
+
+  <noscript><p class="wrap">This site needs JavaScript turned on to show its pages.</p></noscript>
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
